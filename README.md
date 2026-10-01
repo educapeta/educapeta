@@ -14,16 +14,17 @@
 <tr>
 <td width="230" align="center">
   <a href="https://github.com/educapeta/projetos-para-casa">
-    <img src="https://raw.githubusercontent.com/educapeta/projetos-para-casa/main/Rack_Capo/Renderings/capo1-4.JPG" width="210">
+    <img src="https://raw.githubusercontent.com/educapeta/projetos-para-casa/main/01-rack-capo/preview.png" width="210">
   </a>
 </td>
 <td>
   <h3>🏠 <a href="https://github.com/educapeta/projetos-para-casa">Projetos para Casa</a></h3>
-  Peças do dia a dia: rack/capô com fechadura e pino, monotub, molde de queijo Camembert,
-  catraca de vôlei, bomba de água, prendedor de celular, organizadores, suporte de filamento,
-  placa de bruxismo e reservatório isotérmico.
+  <b>20 modelagens</b>, cada uma em sua própria pasta com <b>README e imagem</b>: capotraste de
+  violão com cremalheira, monotub, prensa e molde de queijo Camembert, catraca de rede de vôlei,
+  bomba de água, prendedor e tripé de celular, organizadores, suporte de filamento, placa de
+  bruxismo, reservatório isotérmico, testador de tolerância e mais.
   <br><br>
-  <b>128 arquivos</b> · <code>.SLDPRT</code> <code>.SLDASM</code> <code>.STL</code> <code>.ipt</code> <code>.DXF</code>
+  <b>181 arquivos</b> · <code>.SLDPRT</code> <code>.SLDASM</code> <code>.STL</code> <code>.ipt</code> <code>.gx</code> <code>.fpp</code>
 </td>
 </tr>
 
@@ -76,21 +77,6 @@
 
 <tr>
 <td width="230" align="center">
-  <a href="https://github.com/educapeta/dia-das-maes">
-    <div style="font-size:64px">🎁</div>
-  </a>
-</td>
-<td>
-  <h3>🎁 <a href="https://github.com/educapeta/dia-das-maes">Dia das Mães</a></h3>
-  Montagem de presente impressa em 3D: base, pezinhos, parafuso fixador e peça de fixação,
-  com os projetos do fatiador já prontos (suportes e posicionamento).
-  <br><br>
-  <b>17 arquivos</b> · <code>.SLDASM</code> <code>.STL</code> <code>.gx</code> <code>.fpp</code>
-</td>
-</tr>
-
-<tr>
-<td width="230" align="center">
   <a href="https://github.com/educapeta/motorhome">
     <div style="font-size:64px">🚐</div>
   </a>
@@ -123,7 +109,7 @@
 
 ### 🛠️ Ferramentas e formatos que uso
 
-`SolidWorks 2017` · `FlashPrint` · `Fusion 360` · `AutoCAD/DXF` · `Inventor`
+`SolidWorks 2017` · `FlashPrint` · `Fusion 360` · `AutoCAD/DXF` · `Inventor` · `Python/Pillow`
 `STL` (impressão 3D) · `DXF` (corte de chapa) · `STEP / IGES / x_t` (intercâmbio) · `Git LFS`
 
 ### 📄 Licença
