@@ -1,10 +1,53 @@
 <h1 align="center">Eduardo Larsen Güths</h1>
 
 <p align="center">
-  <b>Modelagem 3D aplicada</b><br>
-  SolidWorks · Impressão 3D · Corte de chapa (DXF) · Intercâmbio CAD (STEP / IGES / x_t)<br><br>
-  Projetos de peças e equipamentos para <b>casa</b>, <b>oficina</b>, <b>cervejaria artesanal</b> e trabalhos de engenharia.
+  <b>Mestrando em Neurociências (PPGNeuro/UFSC)</b> — Interfaces Cérebro-Máquina<br>
+  Decodificação de movimento a partir de EEG · Modelagem 3D · Prototipagem de baixo custo<br><br>
+  Do desenho CAD à rede neural: engenharia de ponta a ponta aplicada a <b>próteses de mão</b>.
 </p>
+
+---
+
+## 🧠 Em foco: BCI de mão biônica (projeto de mestrado)
+
+**Decodificação de trajetória 3D da mão a partir de EEG** para controle de prótese — mestrado em
+Neurociências (PPGNeuro/UFSC), com protocolo de aquisição **aprovado pelo CEP/UFSC**.
+
+➡️ **[Mestrado-Kinect-EEG-Trajectory](https://github.com/educapeta/Mestrado-Kinect-EEG-Trajectory)**
+
+- **Aquisição offline de EEG** — g.Nautilus (32 canais, 500 Hz), protocolo ME/MI com 6 condições,
+  marcadores com a amostra exata do EEG e sincronização com o movimento por relógio monotônico comum
+- **Ground truth multimodal da mão** — Kinect v2 (RGB + profundidade), webcams auxiliares calibradas
+  em estéreo (erro de reprojeção < 1,5 px) e **duas luvas inerciais** (ESP32 + MPU6050) com
+  firmware versionado
+- **Rede SAND** — atenção esparsa + convoluções: janela de EEG de 2 s → trajetória 3D (30 × 3),
+  com alvos de posição e velocidade e regularizador anatômico
+- **Sistema online** — inferência assíncrona com a trajetória prevista sobreposta ao vídeo e
+  filtro de Kalman fundindo velocidade decodificada com a aceleração do IMU
+- **~27 suítes de teste** executáveis sem hardware, com sessões sintéticas ponta a ponta
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white)
+![MediaPipe](https://img.shields.io/badge/MediaPipe-0097D7?style=flat&logo=google&logoColor=white)
+![Kinect v2](https://img.shields.io/badge/Kinect_v2-7B83EB?style=flat&logo=microsoft&logoColor=white)
+![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat&logo=espressif&logoColor=white)
+![g.tec](https://img.shields.io/badge/g.tec_g.Nautilus-00A3E0?style=flat)
+
+---
+
+## 🦾 Braço antropomórfico de baixo custo (TCC)
+
+Desenvolvimento de um **braço antropomórfico de 4 graus de liberdade** para simular o movimento do
+braço humano: modelo cinemático, simulação, otimização estrutural dos componentes e protótipo
+construído por **impressão 3D** — com o objetivo de replicar movimentos de preensão de objetos,
+aplicando tecnologias de sensação táctil humana a próteses de membros superiores.
+
+Em colaboração com o **Laboratório de Robótica (LAR)**, o **Instituto de Engenharia Biomédica (IEB)**
+e o **Laboratório de Circuitos Integrados (LCI)** da UFSC.
+
+🔗 **[Antrophomorfic Arm 4DOF no Thingiverse](https://www.thingiverse.com/thing:6723166)**
+· [todos os designs](https://www.thingiverse.com/Educapeta/designs)
 
 ---
 
@@ -109,7 +152,8 @@
 
 ### 🛠️ Ferramentas e formatos que uso
 
-`SolidWorks 2017` · `FlashPrint` · `Fusion 360` · `AutoCAD/DXF` · `Inventor` · `Python/Pillow`
+`SolidWorks 2017` · `FlashPrint` · `Fusion 360` · `AutoCAD/DXF` · `Inventor` ·
+`Python` (NumPy · PyTorch · OpenCV · MediaPipe) · `PlatformIO/ESP32` · `Kinect SDK 2.0` ·
 `STL` (impressão 3D) · `DXF` (corte de chapa) · `STEP / IGES / x_t` (intercâmbio) · `Git LFS`
 
 ### 📄 Licença
