@@ -1,30 +1,26 @@
 <h1 align="center">Eduardo Larsen Güths</h1>
 
 <p align="center">
-  <b>Mestrando em Neurociências (PPGNeuro/UFSC)</b> — Interfaces Cérebro-Máquina<br>
-  Decodificação de movimento a partir de EEG · Modelagem 3D · Prototipagem de baixo custo<br><br>
-  Do desenho CAD à rede neural: engenharia de ponta a ponta aplicada a <b>próteses de mão</b>.
+  <b>Master's Student in Neuroscience (PPGNeuro · UFSC)</b> — Brain-Computer Interfaces<br>
+  Decoding movement from EEG · 3D Modeling · Low-Cost Prototyping<br><br>
+  From CAD to neural networks: end-to-end engineering applied to <b>prosthetic hands</b>.
 </p>
 
 ---
 
-## 🧠 Em foco: BCI de mão biônica (projeto de mestrado)
+## 🧠 In focus: BCI for a Bionic Hand (Master's Project)
 
-**Decodificação de trajetória 3D da mão a partir de EEG** para controle de prótese — mestrado em
-Neurociências (PPGNeuro/UFSC), com protocolo de aquisição **aprovado pelo CEP/UFSC**.
+**Decoding 3D hand trajectories from EEG** to control a prosthesis — Master's in Neuroscience (PPGNeuro · UFSC), with the data collection protocol **approved by the UFSC Research Ethics Committee (CEP)**.
 
 ➡️ **[Mestrado-Kinect-EEG-Trajectory](https://github.com/educapeta/Mestrado-Kinect-EEG-Trajectory)**
 
-- **Aquisição offline de EEG** — g.Nautilus (32 canais, 500 Hz), protocolo ME/MI com 6 condições,
-  marcadores com a amostra exata do EEG e sincronização com o movimento por relógio monotônico comum
-- **Ground truth multimodal da mão** — Kinect v2 (RGB + profundidade), webcams auxiliares calibradas
-  em estéreo (erro de reprojeção < 1,5 px) e **duas luvas inerciais** (ESP32 + MPU6050) com
-  firmware versionado
-- **Rede SAND** — atenção esparsa + convoluções: janela de EEG de 2 s → trajetória 3D (30 × 3),
-  com alvos de posição e velocidade e regularizador anatômico
-- **Sistema online** — inferência assíncrona com a trajetória prevista sobreposta ao vídeo e
-  filtro de Kalman fundindo velocidade decodificada com a aceleração do IMU
-- **~27 suítes de teste** executáveis sem hardware, com sessões sintéticas ponta a ponta
+What's in the repository:
+
+- **Offline EEG acquisition** — g.Nautilus (32 channels, 500 Hz), ME/MI protocol with 6 conditions, markers with the exact EEG sample index and EEG↔motion synchronization via a shared monotonic clock
+- **Multimodal hand ground truth** — Kinect v2 (RGB + depth), stereo-calibrated auxiliary webcams (reprojection error < 1.5 px), and **two inertial gloves** (ESP32 + MPU6050) with versioned firmware
+- **SAND neural network** — sparse attention + convolutions: 2 s EEG window → 3D trajectory (30 × 3), with position/velocity targets and an anatomical regularizer
+- **Online system** — asynchronous inference with the predicted trajectory overlaid on video, plus a Kalman filter fusing decoded velocity with IMU acceleration
+- **~27 test suites** runnable without hardware, including end-to-end synthetic sessions
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
@@ -36,22 +32,29 @@ Neurociências (PPGNeuro/UFSC), com protocolo de aquisição **aprovado pelo CEP
 
 ---
 
-## 🦾 Braço antropomórfico de baixo custo (TCC)
+## 🦾 Low-Cost Anthropomorphic Arm (Undergraduate Thesis)
 
-Desenvolvimento de um **braço antropomórfico de 4 graus de liberdade** para simular o movimento do
-braço humano: modelo cinemático, simulação, otimização estrutural dos componentes e protótipo
-construído por **impressão 3D** — com o objetivo de replicar movimentos de preensão de objetos,
-aplicando tecnologias de sensação táctil humana a próteses de membros superiores.
+**"Prototipagem e análise estática de um braço antropomórfico de 4 GDL"** — Undergraduate thesis (TCC) in Mechanical Engineering, UFSC (2024), supervised by Prof. Rodrigo de Souza Vieira (co-supervision: Esdras S. da Silva).
 
-Em colaboração com o **Laboratório de Robótica (LAR)**, o **Instituto de Engenharia Biomédica (IEB)**
-e o **Laboratório de Circuitos Integrados (LCI)** da UFSC.
+Development of a **4-degree-of-freedom anthropomorphic arm** to simulate human arm motion: kinematic modeling, simulation, structural optimization of components, and a prototype built via **3D printing** — aiming to replicate common object-grasping movements, applying human tactile sensing technologies to upper-limb prostheses.
 
-🔗 **[Antrophomorfic Arm 4DOF no Thingiverse](https://www.thingiverse.com/thing:6723166)**
-· [todos os designs](https://www.thingiverse.com/Educapeta/designs)
+In collaboration with the **Robotics Lab (LAR)**, the **Biomedical Engineering Institute (IEB)**, and the **Integrated Circuits Lab (LCI)** at UFSC.
+
+<div align="center">
+<img src="assets/tcc/tcc_arm_isometric.png" alt="Isometric view of the 4-DOF anthropomorphic arm" width="49%">
+<img src="assets/tcc/tcc_arm_side.png" alt="Side view of the arm" width="49%"><br>
+<img src="assets/tcc/tcc_kinematic_4r.png" alt="4R kinematic model diagram" width="40%">
+<img src="assets/tcc/tcc_fea_vonmises.png" alt="FEA von Mises stress of the optimized link" width="49%">
+</div>
+
+### 🔗 Resources
+
+- **Thingiverse (3D-printable files):** [Antrophomorfic Arm 4DOF](https://www.thingiverse.com/thing:6723166) · [All designs](https://www.thingiverse.com/Educapeta/designs)
+- **Full thesis (PDF, 146 pages):** [assets/tcc/tcc_thesis_eduardo_larsen_guths_2024.pdf](assets/tcc/tcc_thesis_eduardo_larsen_guths_2024.pdf)
 
 ---
 
-## 🧩 Repositórios de modelagem 3D
+## 🧩 3D Modeling Portfolio
 
 <table>
 <tr>
@@ -61,13 +64,13 @@ e o **Laboratório de Circuitos Integrados (LCI)** da UFSC.
   </a>
 </td>
 <td>
-  <h3>🏠 <a href="https://github.com/educapeta/projetos-para-casa">Projetos para Casa</a></h3>
-  <b>20 modelagens</b>, cada uma em sua própria pasta com <b>README e imagem</b>: capotraste de
-  violão com cremalheira, monotub, prensa e molde de queijo Camembert, catraca de rede de vôlei,
-  bomba de água, prendedor e tripé de celular, organizadores, suporte de filamento, placa de
-  bruxismo, reservatório isotérmico, testador de tolerância e mais.
+  <h3>🏠 <a href="https://github.com/educapeta/projetos-para-casa">Home Projects</a></h3>
+  <b>20 designs</b>, each in its own folder with <b>README and preview image</b>: guitar
+  capotraste with rack-and-pinion, monotub, cheese press and Camembert mold, volleyball
+  net tensioner, water pump, phone clips and tripods, organizers, filament holders,
+  bruxism plate, insulated reservoir, tolerance tester, and more.
   <br><br>
-  <b>181 arquivos</b> · <code>.SLDPRT</code> <code>.SLDASM</code> <code>.STL</code> <code>.ipt</code> <code>.gx</code> <code>.fpp</code>
+  <b>181 files</b> · <code>.SLDPRT</code> <code>.SLDASM</code> <code>.STL</code> <code>.ipt</code> <code>.gx</code> <code>.fpp</code>
 </td>
 </tr>
 
@@ -78,12 +81,12 @@ e o **Laboratório de Circuitos Integrados (LCI)** da UFSC.
   </a>
 </td>
 <td>
-  <h3>🍺 <a href="https://github.com/educapeta/projetos-para-cervejaria">Projetos para Cervejaria</a></h3>
-  Sistema <b>Carbonator</b> do projeto Cerveja Fácil / AgroKeg (tampa, base de gás, pinos com
-  o-ring, porcas e mola), versão flexível com espigão, moldes de o-ring, adaptadores, sparge,
-  suporte de termômetro e direcionador de torneira do fermentador.
+  <h3>🍺 <a href="https://github.com/educapeta/projetos-para-cervejaria">Brewery Projects</a></h3>
+  <b>Carbonator</b> system for the Cerveja Fácil / AgroKeg project (cap, gas base,
+  O-ring pins, nuts and spring), flexible version with tap, O-ring molds, adapters,
+  sparge, thermometer holder, and fermenter tap guide.
   <br><br>
-  <b>107 arquivos</b> · <code>.SLDPRT</code> <code>.SLDASM</code> <code>.SLDDRW</code> <code>.STL</code> <code>.gx</code> <code>.fpp</code>
+  <b>107 files</b> · <code>.SLDPRT</code> <code>.SLDASM</code> <code>.SLDDRW</code> <code>.STL</code> <code>.gx</code> <code>.fpp</code>
 </td>
 </tr>
 
@@ -94,12 +97,12 @@ e o **Laboratório de Circuitos Integrados (LCI)** da UFSC.
   </a>
 </td>
 <td>
-  <h3>🔧 <a href="https://github.com/educapeta/equipamentos-saulo">Equipamentos</a></h3>
-  Gabinetes em <b>chapa dobrada</b> com padrão plano para corte (Air Safe Modelo 1 e 2, com
-  desenhos técnicos e vídeos de montagem), caixas impressas em 3D (DUPLAC V1/V2), gabinete do
-  medidor de CO₂, caixa para moto, fivelas, suporte de lâmpada e peças de acabamento.
+  <h3>🔧 <a href="https://github.com/educapeta/equipamentos-saulo">Equipment</a></h3>
+  <b>Sheet-metal enclosures</b> with flat patterns for laser cutting (Air Safe Model 1
+  and 2, with technical drawings and assembly videos), 3D-printed boxes (DUPLAC V1/V2),
+  CO₂ meter enclosure, motorcycle case, buckles, lamp holder, and finishing parts.
   <br><br>
-  <b>133 arquivos</b> · <code>.SLDPRT</code> <code>.DXF</code> <code>.PDF</code> <code>.IGS</code> <code>.stp</code>
+  <b>133 files</b> · <code>.SLDPRT</code> <code>.DXF</code> <code>.PDF</code> <code>.IGS</code> <code>.stp</code>
 </td>
 </tr>
 
@@ -110,11 +113,12 @@ e o **Laboratório de Circuitos Integrados (LCI)** da UFSC.
   </a>
 </td>
 <td>
-  <h3>🦾 <a href="https://github.com/educapeta/trabalho-final-metodologia">Atuador Mecânico (Trabalho final)</a></h3>
-  Sistema mecânico de braços e alavancas inspirado em uma manopla aceleradora, com garra e pinça.
-  Inclui montagem final, desenhos técnicos das peças e o memorial descritivo do projeto.
+  <h3>🦾 <a href="https://github.com/educapeta/trabalho-final-metodologia">Mechanical Actuator (Course Project)</a></h3>
+  Mechanical system of links and levers inspired by an accelerator handle, with gripper
+  and tweezers. Includes final assembly, technical drawings of the parts, and the
+  project specification report.
   <br><br>
-  <b>21 arquivos</b> · <code>.SLDPRT</code> <code>.SLDASM</code> <code>.SLDDRW</code> <code>.docx</code>
+  <b>21 files</b> · <code>.SLDPRT</code> <code>.SLDASM</code> <code>.SLDDRW</code> <code>.docx</code>
 </td>
 </tr>
 
@@ -126,10 +130,10 @@ e o **Laboratório de Circuitos Integrados (LCI)** da UFSC.
 </td>
 <td>
   <h3>🚐 <a href="https://github.com/educapeta/motorhome">Motorhome</a></h3>
-  Pia desenhada para aproveitar o espaço reduzido da bancada de um veículo — modelo paramétrico
-  e STL pronto para impressão.
+  Sink designed to maximize the limited counter space of a vehicle — parametric model
+  with STL ready for 3D printing.
   <br><br>
-  <b>6 arquivos</b> · <code>.SLDPRT</code> <code>.STL</code>
+  <b>6 files</b> · <code>.SLDPRT</code> <code>.STL</code>
 </td>
 </tr>
 
@@ -141,26 +145,28 @@ e o **Laboratório de Circuitos Integrados (LCI)** da UFSC.
 </td>
 <td>
   <h3>🌡️ <a href="https://github.com/educapeta/confortimetro">Confortímetro</a></h3>
-  Modelagem 3D do desenvolvimento do projeto do confortímetro.
+  3D modeling of the comfort meter development project.
   <br><br>
-  <b>5 arquivos</b> · <code>.SLDPRT</code>
+  <b>5 files</b> · <code>.SLDPRT</code>
 </td>
 </tr>
 </table>
 
+💡 Opening any `.stl` file in a GitHub repository renders the part in 3D. 🖨️
+
 ---
 
-### 🛠️ Ferramentas e formatos que uso
+## 🛠️ Tools & Formats
 
 `SolidWorks 2017` · `FlashPrint` · `Fusion 360` · `AutoCAD/DXF` · `Inventor` ·
 `Python` (NumPy · PyTorch · OpenCV · MediaPipe) · `PlatformIO/ESP32` · `Kinect SDK 2.0` ·
-`STL` (impressão 3D) · `DXF` (corte de chapa) · `STEP / IGES / x_t` (intercâmbio) · `Git LFS`
+`STL` (3D printing) · `DXF` (sheet metal) · `STEP / IGES / x_t` (CAD interchange) · `Git LFS`
 
-### 📄 Licença
+## 📄 License
 
-Os modelos são de minha autoria e estão sob **CC BY-NC-SA 4.0** — use, imprima e adapte com
-atribuição, sem fins comerciais. Para uso comercial, entre em contato.
+3D models are my own work, released under **CC BY-NC-SA 4.0** — use, print, and adapt
+with attribution, non-commercial only. For commercial use, contact me.
 
 ---
 
-<p align="center"><i>Abrindo um arquivo <code>.stl</code> em qualquer repositório, o GitHub mostra a peça em 3D. 🖨️</i></p>
+<p align="center"><i>Opening an <code>.stl</code> file in any repository lets GitHub display the part in 3D. 🖨️</i></p>
