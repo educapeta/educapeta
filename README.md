@@ -3,7 +3,7 @@
 <p align="center">
   <b>Master's Student in Neuroscience (PPGNeuro · UFSC)</b> — Brain-Computer Interfaces<br>
   Decoding movement from EEG · 3D Modeling · Low-Cost Prototyping<br><br>
-  From CAD to neural networks: end-to-end engineering applied to <b>prosthetic hands</b>.
+  From CAD to neural networks: end-to-end engineering applied to <b>prosthetic hands</b> and medical devices.
 </p>
 
 ---
@@ -29,6 +29,37 @@ What's in the repository:
 ![Kinect v2](https://img.shields.io/badge/Kinect_v2-7B83EB?style=flat&logo=microsoft&logoColor=white)
 ![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat&logo=espressif&logoColor=white)
 ![g.tec](https://img.shields.io/badge/g.tec_g.Nautilus-00A3E0?style=flat)
+
+---
+
+## 🫁 InjeVent — Patented Emergency Ventilator
+
+**Arduino-based emergency mechanical ventilator** developed during the COVID-19 pandemic, validated in animal model testing at Hospital das Clínicas (Porto Alegre) — protected by **patent application BR102020015383-8** (UFSC / IFSC).
+
+➡️ **[injevent](https://github.com/educapeta/injevent)**
+
+<table>
+<tr>
+<td width="280" align="center">
+  <a href="https://github.com/educapeta/injevent">
+    <img src="https://raw.githubusercontent.com/educapeta/injevent/main/docs/photos/injvent_prototype.jpg" alt="InjeVent prototype" width="240">
+  </a>
+</td>
+<td>
+
+- **Patent application BR102020015383-8** filed with INPI — inventors: Saulo Güths, **Eduardo Larsen Güths** & Marcelo Vandrese
+- **25 firmware versions** (V4 → V41_PCV): dual PID control, PCV/VCV/A/C/PSV modes, dual ADS1115 16-bit pressure sensing, clinical alarms
+- **17 3D-printed pneumatic parts** — collectors, solenoid couplings, relief valves, fittings
+- **Clinical validation** on animal model alongside commercial ventilators (TAKAOKA), with medical & veterinary teams
+
+</td>
+</tr>
+</table>
+
+![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat&logo=arduino&logoColor=white)
+![PID](https://img.shields.io/badge/Control-PID-brightgreen?style=flat)
+![3D Printing](https://img.shields.io/badge/3D_Printing-STL-orange?style=flat)
+![Patent](https://img.shields.io/badge/Patent-BR102020015383--8-blue?style=flat)
 
 ---
 
