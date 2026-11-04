@@ -32,6 +32,27 @@ What's in the repository:
 
 ---
 
+## 🔬 EEG Artifact Detection with CNN (Course Project)
+
+**Automatic detection of EEG artifacts (blinks, muscle, motion) using a 1D convolutional neural network** — final project for *Modern Computational Tools* (Neuroscience graduate program, UFSC).
+
+➡️ **[eeg-artifact-detection](https://github.com/educapeta/eeg-artifact-detection)**
+
+An end-to-end pipeline covering the full EEG data lifecycle:
+
+- **EDF/GDF I/O & cleaning** — interactive viewer, BAD-segment removal, metadata sanitization, clean export
+- **Quantitative QEEG metrics** — band power (Delta→Gamma), inter-channel Z-scores, Welch PSD, topographic maps
+- **CNN artifact classifier** (TensorFlow/Keras) — 0.5 s epochs, data augmentation, class-weighted training, probability-thresholded predictions exported back as MNE annotations
+- **Data exploration tools** — NPY diagnostics, histogram, signal segment visualization
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)
+![MNE](https://img.shields.io/badge/MNE_Python-2E8B57?style=flat)
+![scikit--learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
+![SciPy](https://img.shields.io/badge/SciPy-8CA1AF?style=flat&logo=scipy&logoColor=white)
+
+---
+
 ## 🦾 Low-Cost Anthropomorphic Arm (Undergraduate Thesis)
 
 **"Prototipagem e análise estática de um braço antropomórfico de 4 GDL"** — Undergraduate thesis (TCC) in Mechanical Engineering, UFSC (2024), supervised by Prof. Rodrigo de Souza Vieira (co-supervision: Esdras S. da Silva).
